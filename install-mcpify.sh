@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-release_tag="${MCPIFY_RELEASE_TAG:-v0.1.0}"
+release_tag="${MCPIFY_RELEASE_TAG:-0.1.0}"
 base_url="https://github.com/kiliannnnn/MCPify/releases/download/${release_tag}"
 
 uname_s=$(uname -s)
