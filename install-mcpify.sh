@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-release_tag="${MCPIFY_RELEASE_TAG:-0.1.0}"
-base_url="https://github.com/kiliannnnn/MCPify/releases/download/${release_tag}"
+release_tag="${MCPIFY_RELEASE_TAG:-latest}"
+download_host="https://github.com/kiliannnnn/MCPify/releases"
+base_url="${download_host}/${release_tag}/download"
 
 uname_s=$(uname -s)
 case "$uname_s" in
